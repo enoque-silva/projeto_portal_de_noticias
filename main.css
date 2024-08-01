@@ -51,7 +51,7 @@ header .container{
     border: 1px solid #ccc;
     background-color: #fff;
 }
-.subMenu > li{
+.subMenu li{
     list-style: none;
     padding: 8px 8px;
     
@@ -100,4 +100,76 @@ aside .noticia{
     grid-template-columns: repeat(3, 32.6%);
     column-gap: 1%;
     row-gap: 5%;
+}
+
+.btn-menu button{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    header div.container{        
+        flex-direction: column;
+    }
+    .conteudo{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }    
+    .destaque .noticia a{
+        display: block;
+        font-size: 1.5em;
+    }    
+    .destaque .noticia img{
+        margin-right: 0;
+    }
+    .noticias{
+        display: block;
+    }
+    .noticias .noticia{
+        margin-bottom: 16px;
+    }
+    aside{
+        padding-left: 0px;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .menu > li{       
+        clear: both;
+    }
+    .subMenu{
+        display: block;
+        position: relative;
+        border: none;
+    }
+    .subMenu li{
+        padding: 8px 0px;
+    }
+
+    .btn-menu{
+        display: flex;
+        justify-content: center;
+        margin: 16px 16px;
+    }
+
+    .btn-menu button{
+        display: block;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .destaque .noticia a{
+        font-size: 1.5em;
+    } 
+    .noticias{
+        grid-template-columns: repeat(2, 49%);
+    } 
 }
