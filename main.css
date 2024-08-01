@@ -14,6 +14,7 @@
 header{
     padding: 16px 0 0;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 55px;
 }
 
 header .container{
@@ -25,7 +26,7 @@ header .container{
 .menu > li{
     float: left;
     list-style: none;
-    padding: 13px;
+    padding: 13px 13px 13px 0px;
     border-top: 3px solid transparent;
     cursor: pointer;
     position: relative;
@@ -48,6 +49,7 @@ header .container{
     top: 100%;
     min-width: max-content;
     border: 1px solid #ccc;
+    background-color: #fff;
 }
 .subMenu > li{
     list-style: none;
@@ -59,3 +61,43 @@ header .container{
     clear: both;
 }
 
+.conteudo{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+section h2{
+    margin-bottom: 21px;
+}
+
+.noticia img{
+    max-width: 100%;
+}
+
+.destaque{
+    margin-bottom: 56px;
+}
+
+.destaque .noticia a{
+    display: flex;
+    font-size: 2em;
+}
+
+.destaque .noticia img{
+    margin-right: 8px;
+}
+
+aside{
+    padding-left: 40px;
+}
+
+aside .noticia{
+    margin-bottom: 24px;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
